@@ -1,0 +1,132 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white; 
+}
+
+nav {
+  padding: 15px;
+  text-align: center;
+  background-color: #666;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+}
+
+nav ul li a:hover {
+  background: #fff;
+  color: #666;
+  border-radius: 5px;
+}
+
+section {
+  margin: 20px 0;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  font-size: 2em;
+  color: #222;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 3px solid #666;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.portfolio-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Video Container */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Media queries for responsive design */
+@media screen and (min-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  .portfolio-item {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .portfolio-item img {
+    max-width: 45%;
+  }
+}
+
+p {
+    text-indent: 2em;
+    margin-bottom: 1em;
+  }
