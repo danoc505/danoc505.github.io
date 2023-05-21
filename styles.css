@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #3D1F12; /* Fall tri-color */
+  background-color: #3D1F12;
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -51,7 +51,7 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
   padding: 5px;
-  background-color: #3D2A1F; /* Fall tri-color */
+  background-color: #3D2A1F;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
 }
@@ -66,7 +66,7 @@ section {
   background-image: url('octopus.png');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Add parallax scrolling */
+  background-attachment: fixed;
   padding: 50px;
 }
 
@@ -83,7 +83,7 @@ section h2 {
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
-  background-color: #AB5C2A; /* Fall tri-color */
+  background-color: #AB5C2A;
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -98,7 +98,7 @@ section h2 {
 }
 
 .portfolio-item img {
-  max-width: 150%;
+  max-width: 100%;
   height: auto;
   border: 1px solid #ccc;
   margin-bottom: 10px;
@@ -113,35 +113,33 @@ section h2 {
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  padding-bottom: 56.25%;
   padding-top: 25px;
   height: 0;
-overflow: hidden;
+  overflow: hidden;
 }
 
 .video-container iframe {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-/* Footer */
 footer {
-background-color: #481717;
-color: #502525;
-padding: 15px;
-text-align: center;
-margin-top: 20px;
-background-image: url('textures.jpg');
-background-size: cover;
-background-position: center;
+ background-color: #481717;
+  color: #502525;
+  padding: 15px;
+  text-align: center;
+  margin-top: 20px;
+  background-image: url('textures.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
-/* Form styling */
 .form-group {
-  background-color: #3D2A1F; /* Fall tri-color */
+  background-color: #3D2A1F;
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -151,50 +149,49 @@ background-position: center;
 }
 
 .form-group label {
-display: block;
-margin-bottom: 10px;
-color: #fff;
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group textarea {
-width: 100%;
-padding: 10px;
-margin-bottom: 10px;
-border: none;
-border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
 }
 
 .form-group input[type="submit"] {
-background-color: #E26A6A;
-color: #fff;
-padding: 10px 15px;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-transition: background-color 0.3s ease-in-out;
+  background-color: #E26A6A;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .form-group input[type="submit"]:hover {
-background-color: #1f1f1f;
+  background-color: #1f1f1f;
 }
 
-/* Media queries for responsive design */
 @media screen and (min-width: 768px) {
-nav ul {
-justify-content: center;
-}
+  nav ul {
+    justify-content: center;
+  }
 
-.portfolio-item {
-flex-direction: row;
-justify-content: space-between;
-margin-bottom: 30px;
-background-image: none;
-padding: 50px;
-}
+  .portfolio-item {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    background-image: none;
+    padding: 50px;
+  }
 
-.portfolio-item img {
-max-width: 45%;
-}
+  .portfolio-item img {
+    max-width: 45%;
+  }
 }
